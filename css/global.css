@@ -3,7 +3,7 @@
 html,body{font-family: PingFangSC-Regular; height: 100%;}
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: #ccc;
-  font-size: 0.28rem;
+  font-size: 0.24rem;
 }
 /* dialog组件 */
 .dialog-mask {
@@ -23,7 +23,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    background-color: #FFFFFF;
+    background-color: #F9F6FA;
     text-align: center;
     border-radius: 0.2rem;
     overflow: hidden;
@@ -42,7 +42,14 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 }
 .weui-btn{border-radius: 0.45rem;}
 .dialogTitle{height: 1.3rem; line-height: 1.3rem; text-align: center; font-size: 0.32rem; color: #333;}
+.dialogTitle2{height: 1rem; line-height: 1rem; text-align: center;
+ font-size: 0.32rem; color: #333;border-bottom: 1px solid #ddd;}
 .dialogbd{margin-bottom: 0.5rem;}
+.dialogbdLogo{width: 0.76rem; height: 0.76rem; margin: 0.38rem auto 0;}
+.dialogbdLogo img{width:100%;}
+.permissionTitle{width: 5rem; height: 0.96rem; line-height: 0.96rem; margin: 0 auto;
+ border-bottom: 1px solid #eee; font-size: 0.26rem;}
+.permissionDes{height: 1rem; color:#ccc; line-height: 1rem; font-size: 0.2rem;}
 .inputNick{display: block; width: 5.40rem;  height:0.92rem;line-height: 0.92rem; background: #F4F5F5; 
 color: #333; padding-left: 0.24rem; font-size: 0.28rem; margin: 0 auto; outline: none;}
 
@@ -77,7 +84,7 @@ color: #333; padding-left: 0.24rem; font-size: 0.28rem; margin: 0 auto; outline:
  border-bottom: 1px solid rgba(204,204,204,0.6);background: #fff; position: relative;}
  .leftArrow{width: 0.18rem;height: 0.32rem; background: url(../images/leftArrow.png) no-repeat; position: absolute;
  background-size: cover; top: 0.28rem; left: 0.38rem;}
-
+.regNow{color: #56B82B; font-size: 0.26rem;position:absolute; right:0.2rem;}
 /* personInfo */
 .mainCon{}
 .avatar{height: 1.52rem; background: #fff;line-height: 1.52rem; position: relative; margin-top: 0.4rem;}
@@ -163,5 +170,5 @@ width: 100%; box-sizing: border-box;}
 .userAgree span{color: #333;}
 .phoneMes{color: #333; font-size: 0.24rem;text-align: center;}
 .phoneMes2{color: #333; font-size: 0.24rem; height: 1.2rem; line-height: 1.2rem;}
-.viewAgreeTitle{font-size: 0.28rem; color: #333;}
-.viewAgreeCon{font-size: 0.28rem; color: #333;text-indent: 0.56rem; line-height: 0.48rem;}
+.viewAgreeTitle{font-size: 0.28rem; color: #333;margin-top: 0.36rem;}
+.viewAgreeCon{font-size: 0.28rem; color: #333;text-indent: 0.56rem; line-height: 0.44rem; margin-top: 0.2rem;}

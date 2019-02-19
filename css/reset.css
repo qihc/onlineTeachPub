@@ -35,7 +35,7 @@ strong{font-weight: normal;}
 .clearfix:after{content:""; display:block; visibility:hidden; height:0; clear:both;}
 .clearfix{zoom:1;}
 a{text-decoration:none; color:#969696; font-family: '宋体',Microsoft YaHei,Tahoma,Arial,sans-serif;}
-a:hover{color:#fff; text-decoration:none;}
+a:hover{text-decoration:none;}
 ul,ol{list-style:none;}
 h1, h2, h3, h4, h5, h6{ font-size:100%; font-family: Microsoft YaHei;}
 img{border: none;}
