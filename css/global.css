@@ -188,8 +188,19 @@ width: 100%; box-sizing: border-box;}
 #page .swiper-slide img{height:100%;}
 .buyBottom{height: 1rem; line-height: 1rem; background: #F4F5F5; position: relative;}
 .buyBottom .money{color:#FF6600; font-size: 0.3rem; margin-left: 0.2rem; font-weight: bold;}
-.buyBottom .enjoy{width: 0.36rem; height: 0.36rem;position:absolute; right: 3.54rem;transform: translate(0, -50%);
+.buyBottom .free{font-size: 0.34rem;}
+.buyBottom .enjoying{width: 0.36rem; height: 0.36rem;position:absolute; right: 3.54rem;transform: translate(0, -50%);
 -webkit-transform: translate(0, -50%); top:50%;}
-.buyBottom .enjoy img{width: 100%; vertical-align: top;}
+.buyBottom .enjoyed{width: 0.36rem; height: 0.36rem;position:absolute; right: .34rem;transform: translate(0, -50%);
+-webkit-transform: translate(0, -50%); top:50%;}
+.buyBottom .download{width: 0.32rem; height: 0.36rem;position:absolute; right: 1.32rem;transform: translate(0, -50%);
+-webkit-transform: translate(0, -50%); top:50%;}
+.buyBottom .enjoy img,.buyBottom .enjoyed img,.buyBottom .download img{width: 100%; vertical-align: top;}
 .buyBottom .buyNow{width: 3.22rem; float: right;height: 1rem; line-height: 1rem; font-size: 0.3rem; color:#fff;
 background: #56B82B; text-align: center;}
+.buyMask{position: absolute; z-index: 10; top: 0; left:0; background: rgba(0,0,0,.6); width: 100%; height: 100%;}
+.buyMaskCon{border-radius: 0.34rem; width: 4.46rem;height: 0.68rem; line-height: 0.68rem;background: rgba(0,0,0,.6);
+position: absolute; top: 50%;left: 50%;z-index: 10;-webkit-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);color: #fff;font-size: 0.2rem; text-align: center; }
+.buyedIcon{border-radius: 0.16rem; background: #56B82B;color: #fff; padding: 2px 0.1rem; margin-left: 0.2rem;
+font-size: 0.2rem;vertical-align: top;}
