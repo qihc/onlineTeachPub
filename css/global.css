@@ -95,15 +95,14 @@ color: #333; padding-left: 0.24rem; font-size: 0.28rem; margin: 0 auto; outline:
 .personcavatarpic{width: 1.2rem; height: 1.2rem;  position: absolute;top: 0.5rem; left: 0.6rem;}
 .rightArrow{width: 0.16rem;height: 0.28rem; background: url(../images/rightArrow.png) no-repeat; 
  background-size: cover; position: absolute;top: 0.7rem; right: 0.4rem;}
- .rightArrowrightArrow{width: 0.16rem;height: 0.28rem; background: url(../images/rightArrowrightArrow.png) no-repeat; 
- background-size: cover; position: absolute;top: 0.96rem; right: 0.4rem;}
+.rightArrowWhite{top: 0.96rem; background: url(../images/rightArrowWhite.png) no-repeat; background-size: cover;}
  
- .nickname{height: 0.86rem; background: #fff; margin-top: 0.2rem;line-height: 0.86rem; position: relative;
- border-bottom: 1px solid #e6e6e6;}
- .personinfoModify{color: #999; font-size: 0.32rem; float: right; margin-right: 0.9rem;}
- .rightArrow2{top: 0.3rem;}
- .personinfoDefault{color: #ccc; font-size: 0.32rem; float: right; margin-right: 0.4rem;}
- .greenBtn{width: 6.7rem;height: 0.9rem;  margin:1.84rem auto 0;}
+.nickname{height: 0.86rem; background: #fff; margin-top: 0.2rem;line-height: 0.86rem; position: relative;
+border-bottom: 1px solid #e6e6e6;}
+.personinfoModify{color: #999; font-size: 0.32rem; float: right; margin-right: 0.9rem;}
+.rightArrow2{top: 0.3rem;}
+.personinfoDefault{color: #ccc; font-size: 0.32rem; float: right; margin-right: 0.4rem;}
+.greenBtn{width: 6.7rem;height: 0.9rem;  margin:1.84rem auto 0;}
 
 /* 修改密码 modifyPassword*/
 .modifypassword{padding-left: 0.4rem; padding-right: 0.4rem; background: #fff; border-top: 0.4rem solid #F4F5F5;}
@@ -204,3 +203,33 @@ position: absolute; top: 50%;left: 50%;z-index: 10;-webkit-transform: translate(
 transform: translate(-50%, -50%);color: #fff;font-size: 0.2rem; text-align: center; }
 .buyedIcon{border-radius: 0.16rem; background: #56B82B;color: #fff; padding: 2px 0.1rem; margin-left: 0.2rem;
 font-size: 0.2rem;vertical-align: top;}
+.resourceTop{margin: 0.2rem 0.2rem 0; position: relative;}
+.resourceTop dt{float: left; width: 1.86rem; height: 2.3rem; overflow: hidden;}
+.resourceTop dt img{vertical-align: top;}
+.resourceTop dd{float: left; margin-left: 0.34rem; }
+.mainTitle{height: 1.2rem; line-height: 0.5rem; font-size: 0.3rem; color: #000;width: 4.5rem;}
+.subTitle{font-size: 0.26rem; color: #999;}
+.resourceEnjoy{width: 0.36rem; height: 0.36rem;position:absolute; right: 0; bottom: 0;}
+.resourceBottom{border-radius: 0.2rem; background: #F8F8F8;margin: 0.2rem 0.2rem 0; }
+.resourceBottomTitle{height: 0.98rem;text-align: center; line-height: 0.98rem; color: #ccc; font-size: 0.28rem;}
+.resourceBottom ul{padding-left: 0.2rem; padding-right: 0.2rem; padding-bottom: 0.3rem;}
+.resourceBottomCon{height: 0.76rem; line-height: 0.76rem; color: #666; font-size: 0.3rem; position:relative;}
+
+.resourceList{height:1rem; line-height:1rem; font-size: 0.3rem; position: relative; text-indent: 0.65rem;
+ color: #333; background: #F8F8F8; border-radius: 0.1rem; margin: 0.2rem;}
+.resourceListIcon{width: 0.32rem; height: 0.26rem; background-size: cover; position: absolute;
+top: 50%;left:0.2rem;-webkit-transform: translate(0, -50%);transform: translate(0, -50%);}
+.resourceListIcon.icon_radio{background: url(../images/icon_radio.png) no-repeat; background-size: cover;}
+.resourceListIcon.icon_pic{background: url(../images/icon_pic.png) no-repeat; background-size: cover;}
+.resourceListIcon.icon_pdf{background: url(../images/icon_pdf.png) no-repeat; background-size: cover;}
+.resourceListIcon.icon_text{background: url(../images/icon_text.png) no-repeat;background-size: cover;}
+.resourceListIcon.icon_video{background: url(../images/icon_video.png) no-repeat;background-size: cover;}
+
+.resourceDefaultPic1{width: 4.18rem;height: 2.8rem; background:url(../images/resourceDefaultPic1.png) no-repeat;
+background-size: cover; margin:2.4rem auto; margin-bottom: 0.4rem;}
+.resourceDefaultPic2{width: 4.18rem;height: 2.8rem; background:url(../images/resourceDefaultPic2.png) no-repeat;
+background-size: cover; margin:2.4rem auto; margin-bottom: 0.4rem;}
+.resourceDefaultDes{font-size: 0.24rem; color: #999; text-align: center;}
+.resourceDefaultBtn{width: 6rem; margin:0 auto;margin-top: 2.4rem;}
+.top50{margin-top: 0.5rem;}
+.bottom100{padding-bottom: 1rem;}

@@ -38,4 +38,4 @@ a{text-decoration:none; color:#969696; font-family: '宋体',Microsoft YaHei,Tah
 a:hover{text-decoration:none;}
 ul,ol{list-style:none;}
 h1, h2, h3, h4, h5, h6{ font-size:100%; font-family: Microsoft YaHei;}
-img{border: none;}
+img{border: none; vertical-align: top;}
