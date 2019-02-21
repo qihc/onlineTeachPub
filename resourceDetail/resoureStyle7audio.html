@@ -22,11 +22,10 @@
 		<span class="avatarModel"><img src="../images/avatarModel.png" alt=""></span>
 	</div>
 	<div class="mainCon">
-		<div class="videoWrap">
+		<div class="audioWrap">
 			<!-- <span class="videoTip">该资源为收费资源，购买后可学习</span> -->
-			<audio src="xx.mp3" id="aud"></audio>
-			<img src="../images/video_pause.png" class="video_pause"/>
-			<img src="../images/video_play.png"  class="video_play"/>
+			<audio src="../resource/fly.mp3" id="audio"></audio>
+			<img src="../images/audio_pause.png"  class="audio_play"/>
 			
 		</div>
 		<div class="buyBottom">
@@ -142,6 +141,22 @@
 	            var activeNav = $('#nav .swiper-slide').eq(myPage.activeIndex).addClass('active-nav');
 
 	        }
+			var audio_play=true;
+			$('.audio_play').click(function(){
+				if(audio_play){
+					$(this).attr({
+						'src':'../images/audio_play.png'
+					})
+					$('#audio')[0].play();
+				}else{
+					$(this).attr({
+						'src':'../images/audio_pause.png'
+					})
+					$('#audio')[0].pause();
+				}
+				
+				audio_play=!audio_play;
+			})
 			
 	    </script>
 </body>

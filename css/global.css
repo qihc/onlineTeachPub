@@ -252,9 +252,15 @@ color: #56B82B; text-align: center; margin-left: 0.2rem; float: left;}
 .textPlay.pause{background: url(../images/pause.png); background-size: cover;}
 .videoWrap{height: 4.22rem; background:url(../images/videoWrap.png) no-repeat; background-size: cover;
 position: relative;}
+.audioWrap{height: 4.22rem; background:url(../images/audio_bg.jpg) no-repeat; background-size: cover;
+position: relative;}
 .videoTip{background: #000; opacity: 0.6; position: absolute; top: 50%; left: 50%;transform: translate(-50%, -50%);
 -webkit-transform: translate(-50%, -50%); color: #fff; border-radius: 0.34rem; font-size: 0.24rem;
 width: 4.46rem; height: 0.68rem; line-height: 0.68rem; text-align: center;}
+.videoWrap img{width: 1rem; position: absolute; top: 50%; left: 50%;transform: translate(-50%, -50%);
+-webkit-transform: translate(-50%, -50%);}
+.audioWrap img{width: 1rem; position: absolute; top: 50%; left: 50%;transform: translate(-50%, -50%);
+-webkit-transform: translate(-50%, -50%);}
 .buyBtn{height: 1rem; position: fixed; left: 0; bottom: 0;z-index: 100; background: #56B82B; color: #fff; font-size: 0.3rem;
 text-align: center; line-height: 1rem; width: 100vw;}
 .txtDetail{}
@@ -275,9 +281,4 @@ top: 50%; left: 0;transform: translate(0, -50%);-webkit-transform: translate(0, 
 .txtDetailConPartCon{margin-bottom: 0.1rem;}
 .txtDetailConPartCon span{color: #56B82B;}
 .txtDetailConPartConPic{height: 4.16rem;}
-
-
-
-
 .txtSong{color: #333; font-size: 0.28rem; line-height: 0.64rem; text-align: center; margin-top: 0.5rem;}
-
