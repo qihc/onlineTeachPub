@@ -250,8 +250,10 @@ color: #56B82B; text-align: center; margin-left: 0.2rem; float: left;}
 -webkit-transform: translate(0, -50%);}
 .textPlay.on{background: url(../images/play.png); background-size: cover;}
 .textPlay.pause{background: url(../images/pause.png); background-size: cover;}
-.videoWrap{height: 4.22rem; background:url(../images/videoWrap.png) no-repeat; background-size: cover;
-position: relative;}
+/* .videoWrap{height: 4.22rem; background:url(../images/videoWrap.png) no-repeat; background-size: cover;
+position: relative;} */
+.videoWrap{height: 4.22rem;}
+.videoSize{height: 4.22rem; width: 100%; object-fit: fill}
 .audioWrap{height: 4.22rem; background:url(../images/audio_bg.jpg) no-repeat; background-size: cover;
 position: relative;}
 .videoTip{background: #000; opacity: 0.6; position: absolute; top: 50%; left: 50%;transform: translate(-50%, -50%);
