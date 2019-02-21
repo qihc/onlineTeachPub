@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0"> -->
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <title>北教辅学网</title>
+    <script src="../js/aotoRem.js"></script>
+	<style>
+		body{background: #fff;}
+	</style>
+	<link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../style/weui.css">
+	<link rel="stylesheet" type="text/css" href="../css/global.css"/>
+	<link rel="stylesheet" href="../css/swiper.min.css">
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="../js/swiper.min.js"></script>
+</head>
+<body ontouchstart>
+    <div class="mainHeader">第一节 我爱阅读 <span class="leftArrow"></span>
+		<span class="avatarModel"><img src="../images/avatarModel.png" alt=""></span>
+	</div>
+	<div class="mainCon">
+		<div class="readingHeader">
+			<div class="readingTop"><span class="preClass">上一课</span>本课生字<span class="nextClass">下一课</span></div>
+			<div class="readingBottom">
+				<ul>
+					<li class="txtList cur">我</li>
+					<li class="txtList">我</li>
+					<li class="txtList">我</li>
+					<li class="txtList">我</li>
+					<li class="txtList">我</li>
+					<li class="txtList">我</li>
+					<li class="txtList">我</li>
+					
+				</ul>
+			</div>
+		</div>
+		<div class="readingCenter">
+			<div id="nav" class="swiper-container">
+			    <ul class="swiper-wrapper">
+			        <li class="swiper-slide active-nav"><a href="javascript:;">笔顺演示</a></li>
+			        <li class="swiper-slide"><a href="javascript:;">汉字详解</a></li>
+			        <li class="swiper-slide"><a href="javascript:;">字谜(歌)</a></li>
+			  
+			    </ul>
+			</div>
+			<div id="page" class="swiper-container" id="page">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide slidepage swiper-slide2"><img src="../images/pic4.png" alt=""></div>
+			        <div class="swiper-slide slidepage swiper-slide2">
+						<div class="txtDetail">
+							<div class="txtDetailHeader">
+								<dl class="clearfix">
+									<dt><img src="../images/pic5.png" alt=""></dt>
+									<dd>
+										<div class="txtDetailHeaderDiv">
+											<span class="txtDetailHeaderDivL">【音序】</span>
+											<span class="txtDetailHeaderDivR">J </span>
+										</div>
+										<div class="txtDetailHeaderDiv">
+											<span class="txtDetailHeaderDivL">【部首】</span>
+											<span class="txtDetailHeaderDivR"> 氵</span>
+										</div>
+										<div class="txtDetailHeaderDiv">
+											<span class="txtDetailHeaderDivL">【笔画】 </span>
+											<span class="txtDetailHeaderDivR">6画 </span>
+										</div>
+										<div class="txtDetailHeaderDiv">
+											<span class="txtDetailHeaderDivL">【结构】</span>
+											<span class="txtDetailHeaderDivR"> 单一结构</span>
+										</div>
+
+									</dd>
+								</dl>
+							</div>
+							<div class="txtDetailCon">
+								<div class="txtDetailConPart">
+									<div class="txtDetailConPartTitle"><span class="txtDetailConPartTitleIcon"></span>字义组词</div>
+									<div class="txtDetailConPartCon"><span>① 乡村，村庄：</span>
+									山村、村舍、村落、村民、村野、村寨、 村镇、村俗民风、山野村夫 。</div>
+									<div class="txtDetailConPartCon"><span>② 粗俗：</span>村话。
+									</div>
+								</div>
+								
+								<div class="txtDetailConPart">
+									<div class="txtDetailConPartTitle"><span class="txtDetailConPartTitleIcon"></span>字义组词</div>
+									<div class="txtDetailConPartCon"><span>① 乡村，村庄：</span>
+									山村、村舍、村落、村民、村野、村寨、 村镇、村俗民风、山野村夫 。</div>
+									<div class="txtDetailConPartCon"><span>② 粗俗：</span>村话。
+									</div>
+								</div>
+								
+								<div class="txtDetailConPart">
+									<div class="txtDetailConPartTitle"><span class="txtDetailConPartTitleIcon"></span>图片诠释</div>
+									<div class="txtDetailConPartCon">
+										<div class="txtDetailConPartConPic"><img src="../images/pic6.png" alt=""></div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+			        <div class="swiper-slide slidepage swiper-slide2">
+						<div class="txtSong">
+							<p>春眠不觉晓</p>
+							<p>处处闻啼鸟</p>
+							<p>夜来风雨声</p>
+							<p>花落知多少</p>
+						</div>
+						
+					</div>       
+			    </div>
+			</div>
+			
+		</div>
+	
+	</div>
+	<div class="buyBottom">
+		<span class="textPlay on"></span>
+		<span></span>
+		<span class="enjoyed"><img src="../images/enjoy.png" alt=""></span>
+		
+	</div>
+	<script type="text/javascript">
+	        var myNav = new Swiper('#nav', {
+	            spaceBetween: 0,
+	            slidesPerView : 3,
+	            watchSlidesProgress : true,
+	            watchSlidesVisibility : true,
+	            on:{
+	                tap: function(){
+	                    myPage.slideTo( myNav.clickedIndex)
+	                }
+	            }
+	        })
+	        var myPage = new Swiper('#page',{
+	            on:{
+	            slideChangeTransitionStart: function(){
+	                updateNavPosition()
+	            }}
+	        })
+	        function updateNavPosition(){
+	            $('#nav .active-nav').removeClass('active-nav');
+	            var activeNav = $('#nav .swiper-slide').eq(myPage.activeIndex).addClass('active-nav');
+	        }
+			$('.textPlay').click(function(){
+				$(this).toggleClass('pause')
+			})
+	    </script>
+</body>
+
+</html>
