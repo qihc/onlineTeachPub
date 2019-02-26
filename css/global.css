@@ -171,8 +171,9 @@ width: 100%; box-sizing: border-box;}
 .userAgree span{color: #333;}
 .phoneMes{color: #333; font-size: 0.24rem;text-align: center;}
 .phoneMes2{color: #333; font-size: 0.24rem; height: 1.2rem; line-height: 1.2rem;}
-.viewAgreeTitle{font-size: 0.28rem; color: #333;margin-top: 0.36rem;}
-.viewAgreeCon{font-size: 0.28rem; color: #333;text-indent: 0.56rem; line-height: 0.44rem; margin-top: 0.2rem;}
+.viewAgreeTitle{font-size: 0.28rem; color: #333;margin-top: 0.36rem; font-weight: bold;}
+.viewAgreeCon{font-size: 0.28rem; color: #333;text-indent: 0.56rem; line-height: 0.44rem; margin-top: 0.2rem;
+ white-space:normal; word-break:break-all;}
 
 /* 资源详情 */
 .avatarModel{width: 0.48rem; height: 0.48rem; position: absolute;top:50%; right: 0.2rem;transform: translate(0, -50%);
