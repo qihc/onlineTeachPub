@@ -211,7 +211,7 @@ font-size: 0.2rem;}
 .resourceTop dt img{}
 .resourceTop dd{float: left; margin-left: 0.34rem; }
 .mainTitle{height: 1.2rem; line-height: 0.5rem; font-size: 0.3rem; color: #000;width: 4.5rem;}
-.subTitle{font-size: 0.26rem; color: #999;}
+.subTitle{font-size: 0.26rem; color: #999;width: 4rem;}
 .resourceEnjoy{width: 0.36rem; height: 0.36rem;position:absolute; right: 0; bottom: 0;}
 .resourceBottom{border-radius: 0.2rem; background: #F8F8F8;margin: 0.2rem 0.2rem 0; }
 .resourceBottomTitle{height: 0.98rem;text-align: center; line-height: 0.98rem; color: #ccc; font-size: 0.28rem;}
