@@ -82,6 +82,20 @@
 
 				}
 			});
+			
+			var h1 = $(window).height();
+
+			$(window).resize(function() {
+				console.log($(window).height())
+				if($(window).height()<h1){
+				
+					$('.footertype1').hide()
+				}else{
+					$('.footertype1').show()
+				}
+				
+
+			});
 
 		});
 	</script>
