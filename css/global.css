@@ -40,7 +40,27 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     border-radius:0.45rem;
     overflow: hidden;
 }
+.weui-btn {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 14px;
+    padding-right: 14px;
+    box-sizing: border-box;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    line-height: 2.55555556;
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    overflow: hidden;
+}
 .weui-btn{border-radius: 0.45rem;}
+.weui-btn_primary {
+    background-color: #1AAD19;
+}
 .dialogTitle{height: 1.3rem; line-height: 1.3rem; text-align: center; font-size: 0.32rem; color: #333;}
 .dialogTitle2{height: 1rem; line-height: 1rem; text-align: center;
  font-size: 0.32rem; color: #333;border-bottom: 1px solid #ddd;}
