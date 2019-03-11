@@ -12,7 +12,9 @@
 	<link rel="stylesheet" type="text/css" href="../css/global.css"/>
 	<style>
 		body{background: #fff;}
+		.sendAgain{color: #ccc;}
 	</style>
+	<script src="../js/jquery-3.3.1.min.js"></script>
 </head>
 <body ontouchstart>
     <div class="mainHeader">设置新密码<span class="leftArrow"></span></div>
@@ -20,7 +22,7 @@
 		<div class="teachLoginWrap clearfix">
 			<div class="phoneMes2">验证码已发送到您的188****1052手机</div>
 			<div class="setpassword"><input type="text" placeholder="请输入您收到的验证码">
-				<span class="countdown2">60s</span>
+				<span class="countdown2">5s</span>
 			</div>
 			<div class="setpassword"><input type="password" placeholder="设置密码（6-18位数字字母组合）">
 				
@@ -34,6 +36,40 @@
 		</div>
 		
 	</div>
+	<script>
+		$(function(){
+			//设置定时器,当时间为0时内容显示为再次发送
+			var timer;
+			var onoff=false;
+			timer = setInterval(countdown, 1000);
+			function countdown() {
+				var num=parseInt($('.countdown2').html()) - 1;
+				if(num==0){
+					onoff=true;
+					clearInterval(timer);
+					$('.countdown2').html('再次发送');
+					$('.countdown2').addClass('sendAgain')
+				}else{
+					$('.countdown2').html(num+'s')
+				}
+				// console.log(num)
+				
+			}
+			$('.countdown2').on('click',function(){
+				if(onoff){
+					// alert(1111)
+					$('.countdown2').removeClass('sendAgain');
+					$('.countdown2').html('5s');
+					timer = setInterval(countdown, 1000);
+					
+					//在此处向后台发送请求
+				}
+				onoff=false;
+				
+			})
+			
+		})
+	</script>
 	
 </body>
 
