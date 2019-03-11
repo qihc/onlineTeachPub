@@ -22,7 +22,7 @@
 		<div class="teachLoginWrap clearfix">
 			<div class="phoneMes2">验证码已发送到您的188****1052手机</div>
 			<div class="setpassword"><input type="text" placeholder="请输入您收到的验证码">
-				<span class="countdown2">5s</span>
+				<span class="countdown2">60s</span>
 			</div>
 			<div class="setpassword"><input type="password" placeholder="设置密码（6-18位数字字母组合）">
 				
@@ -59,7 +59,7 @@
 				if(onoff){
 					// alert(1111)
 					$('.countdown2').removeClass('sendAgain');
-					$('.countdown2').html('5s');
+					$('.countdown2').html('60s');
 					timer = setInterval(countdown, 1000);
 					
 					//在此处向后台发送请求
