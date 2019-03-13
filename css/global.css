@@ -241,7 +241,7 @@ font-size: 0.2rem;}
 .resourceEnjoy{width: 0.36rem; height: 0.36rem;position:absolute; right: 0; bottom: 0;}
 .resourceBottom{border-radius: 0.2rem; background: #F8F8F8;margin: 0.2rem 0.2rem 0; }
 .resourceBottomTitle{height: 0.98rem;text-align: center; line-height: 0.98rem; color: #ccc; font-size: 0.28rem;}
-.resourceBottom ul{padding-left: 0.2rem; padding-right: 0.2rem; padding-bottom: 0.3rem;}
+/* .resourceBottom ul{padding-left: 0.2rem; padding-right: 0.2rem; padding-bottom: 0.3rem;} */
 .resourceBottomCon{/* height: 0.76rem; */line-height: 0.76rem; color: #666; font-size: 0.3rem; position:relative;}
 
 .resourceList{height:1rem; line-height:1rem; font-size: 0.3rem; position: relative; text-indent: 0.65rem;
@@ -314,6 +314,10 @@ top: 50%; left: 0;transform: translate(0, -50%);-webkit-transform: translate(0, 
 .txtSong{color: #333; font-size: 0.28rem; line-height: 0.64rem; text-align: center; margin-top: 0.5rem;}
 .findP{text-align: right; line-height: 0.8rem; color: #ccc;font-size: 0.24rem;}
 .findP a{color: #ccc;font-size: 0.24rem; font-family: Microsoft YaHei;}
-.secondMenu{display: none; margin-left: 0.2rem;}
-.secondMenuTitle{position: relative;}
+
+.secondMenu,.thirdMenu,.fourMenu{display: none; margin-left: 0.2rem;}
+
+.firstMenuTitle,.secondMenuTitle,.thirdMenuTitle,.fourMenuTitle{position: relative;}
 .secondMenuCon{color: #56b82b; line-height: 1rem; border-bottom: 1px solid #e5e5e5;}
+.firstMenu{padding-left: 0.2rem; padding-right: 0.2rem; padding-bottom: 0.3rem;
+line-height: 0.76rem; color: #666; font-size: 0.3rem; }

@@ -56,33 +56,51 @@
 					</div>
 					<div class="resourceBottom">
 						<div class="resourceBottomTitle">资源目录</div>
-						<ul>
-							<li class="resourceBottomCon">第一单元：我爱阅读 拷贝 <span class=" rightArrow2"></span>
-								<dl class="secondMenu">
-									<dt class="secondMenuTitle">第一节：深恶乱七八学会欣赏吧代表处的<span class="downArrow"></span></dt>
-									<dd>
-										<div class="secondMenuCon">1.大摇大摆的一定会查出</div>
-										<div class="secondMenuCon">2.大摇大摆的一定会查出</div>
-										<div class="secondMenuCon">3.大摇大摆的一定会查出</div>
-									</dd>
-								</dl>
+						<ul class="firstMenu">
+							<li class="firstMenuTitle">第一单元：我爱阅读<span class=" rightArrow2"></span>
+								<ul class="secondMenu">
+									<li class="secondMenuTitle">第1节：二级标题<span class="rightArrow2"></span>
+										<ul class="thirdMenu">
+											<li class="thirdMenuTitle">第1小节：三级标题<span class="rightArrow2"></span>
+											
+												<ul class="fourMenu">
+													<li class="fourMenuTitle">第1段：四级标题<span class="rightArrow2"></span>
+														<ul>
+															<li class="secondMenuCon">1.大摇大摆的一定会查出</li>
+															<li class="secondMenuCon">2.大摇大摆的一定会查出</li>
+															<li class="secondMenuCon">3.大摇大摆的一定会查出</li>
+														</ul>
+													</li>
+												</ul>
+											
+											</li>
+										</ul>
+									</li>	
+								</ul>
 							</li>
-							<li class="resourceBottomCon">第一单元：我爱阅读 拷贝 <span class=" rightArrow2"></span>
-								<dl class="secondMenu">
-									<dt class="secondMenuTitle">第一节：深恶乱七八学会欣赏吧代表处的<span class="downArrow"></span></dt>
-									<dd>
-										<div class="secondMenuCon">1.大摇大摆的一定会查出</div>
-										<div class="secondMenuCon">2.大摇大摆的一定会查出</div>
-										<div class="secondMenuCon">3.大摇大摆的一定会查出</div>
-									</dd>
-								</dl>
+							
+							<li class="firstMenuTitle">第一单元：我爱阅读<span class=" rightArrow2"></span>
+								<ul class="secondMenu">
+									<li class="secondMenuTitle">第1节：二级标题<span class="rightArrow2"></span>
+										<ul class="thirdMenu">
+											<li class="thirdMenuTitle">第1小节：三级标题<span class="rightArrow2"></span>
+											
+												<ul class="fourMenu">
+													<li class="fourMenuTitle">第1段：四级标题<span class="rightArrow2"></span>
+														<ul>
+															<li class="secondMenuCon">1.大摇大摆的一定会查出</li>
+															<li class="secondMenuCon">2.大摇大摆的一定会查出</li>
+															<li class="secondMenuCon">3.大摇大摆的一定会查出</li>
+														</ul>
+													</li>
+												</ul>
+											
+											</li>
+										</ul>
+									</li>	
+								</ul>
 							</li>
-							<li class="resourceBottomCon">第一单元：我爱阅读 拷贝 <span class=" rightArrow2"></span></li>
-							<li class="resourceBottomCon">第一单元：我爱阅读 拷贝 <span class=" rightArrow2"></span></li>
-							<li class="resourceBottomCon">第一单元：我爱阅读 拷贝 <span class=" rightArrow2"></span></li>
-							<li class="resourceBottomCon">第一单元：我爱阅读 拷贝 <span class=" rightArrow2"></span></li>
-							<li class="resourceBottomCon">第一单元：我爱阅读 拷贝 <span class=" rightArrow2"></span></li>
-							<li class="resourceBottomCon">第一单元：我爱阅读 拷贝 <span class=" rightArrow2"></span></li>
+							
 						</ul>
 					</div>
 				</div>
@@ -162,15 +180,10 @@
 
 	        }
 			
-			$('.resourceBottomCon').click(function(){
-				$(this).find('.secondMenu').slideToggle();
-				if ( $(this).children('span').hasClass("downArrow") ){
-					$(this).children('span').removeClass('downArrow')
-				}else{
-					$(this).children('span').addClass('downArrow')
-				}
+			$('.firstMenu li').click(function(){
+				$(this).children('ul').slideToggle();
+				return false;
 
-				
 			})
 			
 	    </script>
