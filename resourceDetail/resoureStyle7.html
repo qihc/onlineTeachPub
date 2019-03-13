@@ -57,14 +57,32 @@
 					<div class="resourceBottom">
 						<div class="resourceBottomTitle">资源目录</div>
 						<ul>
-							<li class="resourceBottomCon">第一单元：我爱阅读 拷贝 <span class="rightArrow rightArrow2"></span></li>
-							<li class="resourceBottomCon">第一单元：我爱阅读 拷贝 <span class="rightArrow rightArrow2"></span></li>
-							<li class="resourceBottomCon">第一单元：我爱阅读 拷贝 <span class="rightArrow rightArrow2"></span></li>
-							<li class="resourceBottomCon">第一单元：我爱阅读 拷贝 <span class="rightArrow rightArrow2"></span></li>
-							<li class="resourceBottomCon">第一单元：我爱阅读 拷贝 <span class="rightArrow rightArrow2"></span></li>
-							<li class="resourceBottomCon">第一单元：我爱阅读 拷贝 <span class="rightArrow rightArrow2"></span></li>
-							<li class="resourceBottomCon">第一单元：我爱阅读 拷贝 <span class="rightArrow rightArrow2"></span></li>
-							<li class="resourceBottomCon">第一单元：我爱阅读 拷贝 <span class="rightArrow rightArrow2"></span></li>
+							<li class="resourceBottomCon">第一单元：我爱阅读 拷贝 <span class=" rightArrow2"></span>
+								<dl class="secondMenu">
+									<dt class="secondMenuTitle">第一节：深恶乱七八学会欣赏吧代表处的<span class="downArrow"></span></dt>
+									<dd>
+										<div class="secondMenuCon">1.大摇大摆的一定会查出</div>
+										<div class="secondMenuCon">2.大摇大摆的一定会查出</div>
+										<div class="secondMenuCon">3.大摇大摆的一定会查出</div>
+									</dd>
+								</dl>
+							</li>
+							<li class="resourceBottomCon">第一单元：我爱阅读 拷贝 <span class=" rightArrow2"></span>
+								<dl class="secondMenu">
+									<dt class="secondMenuTitle">第一节：深恶乱七八学会欣赏吧代表处的<span class="downArrow"></span></dt>
+									<dd>
+										<div class="secondMenuCon">1.大摇大摆的一定会查出</div>
+										<div class="secondMenuCon">2.大摇大摆的一定会查出</div>
+										<div class="secondMenuCon">3.大摇大摆的一定会查出</div>
+									</dd>
+								</dl>
+							</li>
+							<li class="resourceBottomCon">第一单元：我爱阅读 拷贝 <span class=" rightArrow2"></span></li>
+							<li class="resourceBottomCon">第一单元：我爱阅读 拷贝 <span class=" rightArrow2"></span></li>
+							<li class="resourceBottomCon">第一单元：我爱阅读 拷贝 <span class=" rightArrow2"></span></li>
+							<li class="resourceBottomCon">第一单元：我爱阅读 拷贝 <span class=" rightArrow2"></span></li>
+							<li class="resourceBottomCon">第一单元：我爱阅读 拷贝 <span class=" rightArrow2"></span></li>
+							<li class="resourceBottomCon">第一单元：我爱阅读 拷贝 <span class=" rightArrow2"></span></li>
 						</ul>
 					</div>
 				</div>
@@ -143,6 +161,17 @@
 	            var activeNav = $('#nav .swiper-slide').eq(myPage.activeIndex).addClass('active-nav');
 
 	        }
+			
+			$('.resourceBottomCon').click(function(){
+				$(this).find('.secondMenu').slideToggle();
+				if ( $(this).children('span').hasClass("downArrow") ){
+					$(this).children('span').removeClass('downArrow')
+				}else{
+					$(this).children('span').addClass('downArrow')
+				}
+
+				
+			})
 			
 	    </script>
 </body>

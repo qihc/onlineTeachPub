@@ -115,12 +115,18 @@ color: #333; padding-left: 0.24rem; font-size: 0.28rem; margin: 0 auto; outline:
 .personcavatarpic{width: 1.2rem; height: 1.2rem;  position: absolute;top: 0.5rem; left: 0.6rem;}
 .rightArrow{width: 0.16rem;height: 0.28rem; background: url(../images/rightArrow.png) no-repeat; 
  background-size: cover; position: absolute;top: 0.7rem; right: 0.4rem;}
+ .rightArrow2{width: 0.16rem;height: 0.28rem; background: url(../images/rightArrow.png) no-repeat; 
+ background-size: cover; position: absolute;right: 0.4rem;top: 0.3rem;}
+ 
+.downArrow{width: 0.31rem;height: 0.17rem; background: url(../images/downArrow.png) no-repeat; 
+  background-size: cover; position: absolute;top: 0.3rem; right: 0.3rem;}
+  
 .rightArrowWhite{top: 0.96rem; background: url(../images/rightArrowWhite.png) no-repeat; background-size: cover;}
  
 .nickname{height: 0.86rem; background: #fff; margin-top: 0.2rem;line-height: 0.86rem; position: relative;
 border-bottom: 1px solid #e6e6e6;}
 .personinfoModify{color: #999; font-size: 0.32rem; float: right; margin-right: 0.9rem;}
-.rightArrow2{top: 0.3rem;}
+
 .personinfoDefault{color: #ccc; font-size: 0.32rem; float: right; margin-right: 0.4rem;}
 .greenBtn{width: 6.7rem;height: 0.9rem;  margin:1.84rem auto 0;}
 
@@ -236,7 +242,7 @@ font-size: 0.2rem;}
 .resourceBottom{border-radius: 0.2rem; background: #F8F8F8;margin: 0.2rem 0.2rem 0; }
 .resourceBottomTitle{height: 0.98rem;text-align: center; line-height: 0.98rem; color: #ccc; font-size: 0.28rem;}
 .resourceBottom ul{padding-left: 0.2rem; padding-right: 0.2rem; padding-bottom: 0.3rem;}
-.resourceBottomCon{height: 0.76rem; line-height: 0.76rem; color: #666; font-size: 0.3rem; position:relative;}
+.resourceBottomCon{/* height: 0.76rem; */line-height: 0.76rem; color: #666; font-size: 0.3rem; position:relative;}
 
 .resourceList{height:1rem; line-height:1rem; font-size: 0.3rem; position: relative; text-indent: 0.65rem;
  color: #333; background: #F8F8F8; border-radius: 0.1rem; margin: 0.2rem;}
@@ -308,3 +314,6 @@ top: 50%; left: 0;transform: translate(0, -50%);-webkit-transform: translate(0, 
 .txtSong{color: #333; font-size: 0.28rem; line-height: 0.64rem; text-align: center; margin-top: 0.5rem;}
 .findP{text-align: right; line-height: 0.8rem; color: #ccc;font-size: 0.24rem;}
 .findP a{color: #ccc;font-size: 0.24rem; font-family: Microsoft YaHei;}
+.secondMenu{display: none; margin-left: 0.2rem;}
+.secondMenuTitle{position: relative;}
+.secondMenuCon{color: #56b82b; line-height: 1rem; border-bottom: 1px solid #e5e5e5;}
