@@ -70,8 +70,8 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 .permissionTitle{width: 5rem; height: 0.96rem; line-height: 0.96rem; margin: 0 auto;
  border-bottom: 1px solid #eee; font-size: 0.26rem;}
 .permissionDes{height: 1rem; color:#ccc; line-height: 1rem; font-size: 0.2rem;}
-.inputNick{display: block; width: 5.40rem;  height:0.92rem;line-height: 0.92rem; background: #F4F5F5; 
-color: #333; padding-left: 0.24rem; font-size: 0.28rem; margin: 0 auto; outline: none;}
+.inputNick{display: block; width: 5.40rem;  height:0.92rem;line-height: 0.92rem; background: #ecf1f1; 
+color: #333; padding-left: 0.24rem; font-size: 0.28rem; margin: 0 auto; outline: none; border-radius: 0.04rem;}
 
 .sigma-content{
 	margin:0.6rem 0;
