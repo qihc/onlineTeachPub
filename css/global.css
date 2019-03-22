@@ -321,5 +321,11 @@ top: 50%; left: 0;transform: translate(0, -50%);-webkit-transform: translate(0, 
 .secondMenuCon{color: #56b82b; line-height: 1rem; border-bottom: 1px solid #e5e5e5;}
 .firstMenu{padding-left: 0.2rem; padding-right: 0.2rem; padding-bottom: 0.3rem;
 line-height: 0.76rem; color: #666; font-size: 0.3rem; }
-
 .weui-footer_fixed-bottom{bottom:0; background: #fff; padding: 0.2rem 0;}
+
+.EnglishTxt{height: 0.46rem;background: url(../images/EnglishTxt.png); background-size: cover;
+ text-align: center; font-size: 0.4rem; line-height: 0.46rem;}
+.ChineseTxt{height: 1.7rem;background: url(../images/ChineseTxt.png); background-size: cover;
+text-align: center; font-size: 1.1rem; line-height: 1.7rem;}
+.ChineseTxtBig{height:7.1rem;background: url(../images/ChineseTxt.png); background-size: cover;
+text-align: center; font-size:6.4rem; line-height: 7rem; font-family: '楷体';}
