@@ -22,16 +22,35 @@
 	</div>
 	<div class="mainCon">
 		<div class="readingHeader">
-			<div class="readingTop"><span class="preClass">上一课</span>本课生字<span class="nextClass">下一课</span></div>
+			<div class="readingTop">
+				<!-- <span class="preClass">上一课</span> -->
+				本课生字
+				<!-- <span class="nextClass">下一课</span> -->
+				<div class="preClassBtn"></div>
+				<div class="nextClassBtn"></div>
+			</div>
 			<div class="readingBottom">
-				<ul>
-					<li class="txtList cur">我</li>
-					<li class="txtList">我</li>
-					<li class="txtList">我</li>
-					<li class="txtList">我</li>
-					<li class="txtList">我</li>
-					<li class="txtList">我</li>
-					<li class="txtList">我</li>
+				<ul class="txtlength">
+					<li class="txtList">我1</li>
+					<li class="txtList">我2</li>
+					<li class="txtList">我3</li>
+					<li class="txtList">我4</li>
+					<li class="txtList">我5</li>
+					<li class="txtList">我6</li>
+					<li class="txtList">我7</li>
+					<li class="txtList">我8</li>
+					<li class="txtList">我9</li>
+					<li class="txtList">我10</li>
+					<li class="txtList">我1</li>
+					<li class="txtList">我2</li>
+					<li class="txtList">我3</li>
+					<li class="txtList">我4</li>
+					<li class="txtList">我5</li>
+					<li class="txtList">我6</li>
+					<li class="txtList">我7</li>
+					<li class="txtList">我8</li>
+					<li class="txtList">我9</li>
+					<li class="txtList">我10</li>
 					
 				</ul>
 			</div>
@@ -127,32 +146,74 @@
 		<span class="enjoyed"><img src="../images/enjoy.png" alt=""></span>
 		
 	</div>
-	<script type="text/javascript">
-	        var myNav = new Swiper('#nav', {
-	            spaceBetween: 0,
-	            slidesPerView : 3,
-	            watchSlidesProgress : true,
-	            watchSlidesVisibility : true,
-	            on:{
-	                tap: function(){
-	                    myPage.slideTo( myNav.clickedIndex)
-	                }
-	            }
-	        })
-	        var myPage = new Swiper('#page',{
-	            on:{
-	            slideChangeTransitionStart: function(){
-	                updateNavPosition()
-	            }}
-	        })
-	        function updateNavPosition(){
-	            $('#nav .active-nav').removeClass('active-nav');
-	            var activeNav = $('#nav .swiper-slide').eq(myPage.activeIndex).addClass('active-nav');
-	        }
-			$('.textPlay').click(function(){
-				$(this).toggleClass('pause')
-			})
-	    </script>
+<script type="text/javascript">
+	var myNav = new Swiper('#nav', {
+		spaceBetween: 0,
+		slidesPerView : 3,
+		watchSlidesProgress : true,
+		watchSlidesVisibility : true,
+		on:{
+			tap: function(){
+				myPage.slideTo( myNav.clickedIndex)
+			}
+		}
+	})
+	var myPage = new Swiper('#page',{
+		on:{
+		slideChangeTransitionStart: function(){
+			updateNavPosition()
+		}}
+	})
+	function updateNavPosition(){
+		$('#nav .active-nav').removeClass('active-nav');
+		var activeNav = $('#nav .swiper-slide').eq(myPage.activeIndex).addClass('active-nav');
+	}
+	$('.textPlay').click(function(){
+		$(this).toggleClass('pause')
+	})
+	$(document).on('click','.txtlength li',function(){
+		// alert($(this).html())
+		$(this).addClass('cur').siblings().removeClass('cur')
+	})
+	
+$(function(){
+	var txtLength= $('.txtlength').find('li').length;
+	var txtlengthLen=(txtLength+txtLength/25)+'rem';
+	$('.txtlength').width(txtlengthLen);
+	var num =0;
+	$('.preClassBtn').click(function(){
+		if(txtLength<=5){
+			return
+		}else{
+			num--;
+			if(num<0){
+			   num = 0;
+			   return;
+			}
+			console.log(num)
+			$(".txtlength").stop().animate({left:-num*1.04+'rem'}, "slow");
+		}
+		
+	})
+	$('.nextClassBtn').click(function(){
+		if(txtLength<=5){
+			return
+		}else{
+			
+			num++;
+			if(num>txtLength-5){
+			   num = txtLength-5;
+			   return;
+			}
+			console.log(num)
+			$(".txtlength").stop().animate({left:-num*1.04+'rem'}, "slow");
+
+		}
+		
+	})
+})
+	
+</script>
 </body>
 
 </html>

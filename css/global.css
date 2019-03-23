@@ -271,7 +271,7 @@ background: #fff; font-size: 0.24rem; color: #666;line-height:0.5rem; text-align
 .preClass{top: 0.38rem;left: 0.2rem;}
 .nextClass{top: 0.38rem;right: 0.2rem;}
 .txtList{width: 0.8rem;height: 0.8rem; line-height: 0.8rem; border: 1px solid #56B82B; background: #fff;
-color: #56B82B; text-align: center; margin-left: 0.2rem; float: left;}
+color: #56B82B; text-align: center; margin-left: 0.2rem; float: left; cursor: pointer;}
 .txtList.cur{color: #fff; background:#56B82B;}
 .readingFooter{background: #F4F5F5; height: 1rem;}
 .textPlay{width: 0.4rem; height: 0.4rem; position: absolute; left:0.26rem; top: 50%;transform: translate(0, -50%);
@@ -329,3 +329,9 @@ line-height: 0.76rem; color: #666; font-size: 0.3rem; }
 text-align: center; font-size: 1.1rem; line-height: 1.7rem;}
 .ChineseTxtBig{height:7.1rem;background: url(../images/ChineseTxt.png); background-size: cover;
 text-align: center; font-size:6.4rem; line-height: 7rem; font-family: '楷体';}
+
+.readingBottom{position: relative; width: 71%; height: 1rem; overflow: hidden; margin: 0 auto;}
+.txtlength{text-align: center;  height: 0.84rem; position: absolute; top: 0; left: 0; overflow: hidden;}
+.readingTop div{position: absolute; width: 0.8rem;height: 0.8rem; top: 1.28rem; z-index: 999;}
+.preClassBtn{left: 0.12rem; background: url(../images/preClassBtn.png); background-size: cover;}
+.nextClassBtn{right: 0.12rem; background: url(../images/nextClassBtn.png); background-size: cover;}
