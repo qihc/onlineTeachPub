@@ -335,3 +335,9 @@ text-align: center; font-size:6.4rem; line-height: 7rem; font-family: '楷体';}
 .readingTop div{position: absolute; width: 0.8rem;height: 0.8rem; top: 1.28rem; z-index: 999;}
 .preClassBtn{left: 0.12rem; background: url(../images/preClassBtn.png); background-size: cover;}
 .nextClassBtn{right: 0.12rem; background: url(../images/nextClassBtn.png); background-size: cover;}
+
+.enjoyShadow{position: absolute; width: 100vw; height: 100vh; background: #000000; opacity: 0.6;
+top: 0; left: 0;}
+.enjoyarrow{width: 1.69rem; margin-right: 0.6rem; float: right; margin-top: 0.1rem;}
+.enjoyTxt{line-height: 0.54rem; font-size: 0.3rem; color: #fff; width: 3.2rem; margin: 1.7rem auto 0.2rem;}
+.Iknow{width: 1.7rem; margin-left: 2.2rem;}
