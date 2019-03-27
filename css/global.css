@@ -234,9 +234,10 @@ transform: translate(-50%, -50%);color: #fff;font-size: 0.2rem; text-align: cent
 .buyedIcon{border-radius: 0.16rem; background: #56B82B;color: #fff; padding: 2px 0.1rem; margin-left: 0.2rem;
 font-size: 0.2rem;}
 .resourceTop{margin: 0.2rem 0.2rem 0; position: relative;}
-.resourceTop.m0{margin: 0.2rem 0 0 0;}
-.resourceTop dt{float: left; width: 1.86rem; height: 2.3rem; overflow: hidden;}
-.resourceTop dt img{}
+.resourceTop.m0{margin:0 0 0 0;}
+.resourceTop dt{float: left; width: 1.86rem; height: 2.3rem; overflow: hidden; position: relative;}
+.resourceTop dt img{width: 100%; position: absolute; top: 50%; left: 0; transform: translate(0, -50%);
+}
 .resourceTop dd{float: left; margin-left: 0.34rem; }
 .mainTitle{height: 1.2rem; line-height: 0.5rem; font-size: 0.3rem; color: #000;width: 4.5rem;}
 .subTitle{font-size: 0.26rem; color: #999;width: 4rem;}
