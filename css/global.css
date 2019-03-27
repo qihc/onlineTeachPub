@@ -212,7 +212,7 @@ width: 100%; box-sizing: border-box;}
 #nav li.active-nav a{display: inline-block;border-bottom: 0.06rem solid #56B82B; font-weight: bold;}
 #page{margin: 0.2rem;}
 #page .swiper-slide{height:calc(100vh - 3.3rem);overflow-y: auto;}
-#page .swiper-slide2{height:calc(100vh - 5.86rem);overflow-y: scroll;}
+#page .swiper-slide2{height:calc(100vh - 5.86rem);overflow-y: auto;}
 #page .swiper-slide img{/* height:100%; */ 
 width: 100%;}
 .buyBottom{height: 1rem; line-height: 1rem; background: #F4F5F5; position: relative;}
@@ -234,6 +234,7 @@ transform: translate(-50%, -50%);color: #fff;font-size: 0.2rem; text-align: cent
 .buyedIcon{border-radius: 0.16rem; background: #56B82B;color: #fff; padding: 2px 0.1rem; margin-left: 0.2rem;
 font-size: 0.2rem;}
 .resourceTop{margin: 0.2rem 0.2rem 0; position: relative;}
+.resourceTop.m0{margin: 0.2rem 0 0 0;}
 .resourceTop dt{float: left; width: 1.86rem; height: 2.3rem; overflow: hidden;}
 .resourceTop dt img{}
 .resourceTop dd{float: left; margin-left: 0.34rem; }
@@ -241,6 +242,7 @@ font-size: 0.2rem;}
 .subTitle{font-size: 0.26rem; color: #999;width: 4rem;}
 .resourceEnjoy{width: 0.36rem; height: 0.36rem;position:absolute; right: 0; bottom: 0;}
 .resourceBottom{border-radius: 0.2rem; background: #F8F8F8;margin: 0.2rem 0.2rem 1.2rem 0.2rem; }
+.resourceBottom.m0{margin: 0.2rem 0 1.2rem; }
 .resourceBottomTitle{height: 0.98rem;text-align: center; line-height: 0.98rem; color: #ccc; font-size: 0.28rem;}
 .resourceBottomConWrap{padding-left: 0.2rem; padding-right: 0.2rem; padding-bottom: 0.3rem;}
 .resourceBottomCon{/* height: 0.76rem; */line-height: 0.76rem; color: #666; font-size: 0.3rem; position:relative;}
