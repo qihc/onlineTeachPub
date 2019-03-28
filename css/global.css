@@ -368,3 +368,8 @@ top: 0; left: 0;}
 .Iknow{width: 1.7rem; margin-left: 2.2rem;}
 
 .overflow{overflow: hidden;}
+.pagelist{position: absolute; font-size: 0.24rem; top: 0; left: 0; text-align: center; width: 100%; height: 100%;}
+.pageNum{font-size: 0.28rem; color: #BBBCBC; margin: 0 0.16rem;}
+.curpage{color: #FF6600;}
+.prepage,.nextpage{color: #08162D; display: inline-block;}
+.prepage.disabled,.nextpage.disabled{color: #BBBCBC;}
