@@ -30,6 +30,11 @@
 				<div class="playtime">09:20/45:00</div>
 				<span class="speedChange">1X</span>
 				<div class="speedline"><span class="nowspeedline"></span></div>
+				<ul class="speenChoose">
+					<li>4X</li>
+					<li>3X</li>
+					<li>2X</li>
+				</ul>
 			</div>
 		</div>
 		<div class="buyBottom">
@@ -160,6 +165,13 @@
 				}
 				
 				audio_play=!audio_play;
+			})
+			$('.speedChange').click(function(){
+				$('.speenChoose').fadeToggle()
+			})
+			$('.speenChoose li').click(function(){
+				$('.speenChoose').fadeOut("slow");
+				$('.speedChange').html($(this).html())
 			})
 			
 	    </script>
