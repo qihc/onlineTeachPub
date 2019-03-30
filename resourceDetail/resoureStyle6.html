@@ -26,7 +26,7 @@
 				<!-- <span class="preClass">上一课</span> -->
 				本课生字
 				<!-- <span class="nextClass">下一课</span> -->
-				<div class="preClassBtn"></div>
+				<div class="preClassBtn disabled"></div>
 				<div class="nextClassBtn"></div>
 			</div>
 			<div class="readingBottom">
@@ -180,15 +180,21 @@ $(function(){
 	var txtLength= $('.txtlength').find('li').length;
 	var txtlengthLen=(txtLength+txtLength/25)+'rem';
 	$('.txtlength').width(txtlengthLen);
+	if(txtLength<=5){
+		 $('.preClassBtn').addClass('disabled');
+		 $('.nextClassBtn').addClass('disabled')
+	}
 	var num =0;
 	$('.preClassBtn').click(function(){
 		if(txtLength<=5){
 			return
 		}else{
 			num--;
-			if(num<0){
+			if(num<=0){
 			   num = 0;
-			   return;
+			   $(this).addClass('disabled')
+			}else{
+				$('.nextClassBtn').removeClass('disabled');
 			}
 			console.log(num)
 			$(".txtlength").stop().animate({left:-num*1.04+'rem'}, "slow");
@@ -199,11 +205,12 @@ $(function(){
 		if(txtLength<=5){
 			return
 		}else{
-			
 			num++;
-			if(num>txtLength-5){
+			if(num>=txtLength-5){
 			   num = txtLength-5;
-			   return;
+			   $(this).addClass('disabled')
+			}else{
+			   $('.preClassBtn').removeClass('disabled');
 			}
 			console.log(num)
 			$(".txtlength").stop().animate({left:-num*1.04+'rem'}, "slow");

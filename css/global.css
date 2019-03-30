@@ -321,8 +321,7 @@ text-align: center; line-height: 1rem; width: 100vw;}
 .txtDetail{}
 .txtDetailHeader{height: 3.2rem; background: #F4F5F5;}
 .txtDetailHeader dl{padding-top: 0.48rem; padding-left: 0.48rem;}
-.txtDetailHeader dt{margin-right: 0.7rem; float: left;
- width: 1.7rem; height: 2.16rem;}
+.txtDetailHeader dt{margin-right: 0.7rem; float: left; width: 1.72rem; height: 2.2rem; border: 1px solid #ccc;}
 .txtDetailHeader dd{float: left;}
 .txtDetailHeaderDiv{height: 0.58rem;font-size: 0.28rem;}
 .txtDetailHeaderDivL{color: #666;}
@@ -349,17 +348,20 @@ line-height: 0.76rem; color: #666; font-size: 0.3rem; }
 .weui-footer_fixed-bottom{bottom:0; background: #fff; padding: 0.2rem 0;}
 
 .EnglishTxt{height: 0.46rem;background: url(../images/EnglishTxt.png); background-size: cover;
- text-align: center; font-size: 0.4rem; line-height: 0.46rem;}
-.ChineseTxt{height: 1.7rem;background: url(../images/ChineseTxt.png); background-size: cover;
+ text-align: center; font-size: 0.4rem; line-height: 0.46rem; border-bottom: 1px solid #ccc;}
+.ChineseTxt{height: 1.71rem;background: url(../images/ChineseTxt.png); background-size: cover;
 text-align: center; font-size: 1.1rem; line-height: 1.7rem;}
-.ChineseTxtBig{height:7.1rem;background: url(../images/ChineseTxt.png); background-size: cover;
-text-align: center; font-size:6.4rem; line-height: 7rem; font-family: '楷体';}
+.ChineseTxtBig{width:6.8rem;height:6.8rem;background: url(../images/ChineseTxtBig.png); background-size: cover;
+text-align: center; font-size:6.4rem; line-height: 6.8rem; font-family: '楷体'; margin: 0 auto;}
 
 .readingBottom{position: relative; width: 71%; height: 1rem; overflow: hidden; margin: 0 auto;}
 .txtlength{text-align: center;  height: 0.84rem; position: absolute; top: 0; left: 0; overflow: hidden;}
-.readingTop div{position: absolute; width: 0.8rem;height: 0.8rem; top: 1.28rem; z-index: 999;}
-.preClassBtn{left: 0.12rem; background: url(../images/preClassBtn.png); background-size: cover;}
-.nextClassBtn{right: 0.12rem; background: url(../images/nextClassBtn.png); background-size: cover;}
+.readingTop div{position: absolute; width: 0.64rem;height: 0.64rem; top: 1.36rem; z-index: 999;
+background-size: cover;}
+.preClassBtn{left: 0.3rem; background: url(../images/preClassBtn.png); }
+.nextClassBtn{right: 0.3rem; background: url(../images/nextClassBtn.png);}
+.preClassBtn.disabled{left: 0.3rem; background: url(../images/preClassBtn_off.png); background-size: cover;}
+.nextClassBtn.disabled{right: 0.3rem; background: url(../images/nextClassBtn_off.png); background-size: cover;}
 
 .enjoyShadow{position: fixed; width: 100%; height: 100%; background: #000000; opacity: 0.6;
 top: 0; left: 0;}
