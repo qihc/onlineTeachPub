@@ -13,7 +13,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     right: 0;
     left: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.1);
 }
 .dialogCon {
     position: fixed;
@@ -297,7 +297,7 @@ background: #fff; font-size: 0.24rem; color: #666;line-height:0.5rem; text-align
 .nextClass{top: 0.38rem;right: 0.2rem;}
 .txtList{width: 0.8rem;height: 0.8rem; line-height: 0.8rem; border: 1px solid #56B82B; background: #fff;
 color: #56B82B; text-align: center; margin-left: 0.2rem; float: left; cursor: pointer;}
-.txtList.cur{color: #fff; background:#56B82B;}
+.txtList.cur{color: #fff; background:#56B82B;font-size: 0.34rem;}
 .readingFooter{background: #F4F5F5; height: 1rem;}
 .textPlay{width: 0.4rem; height: 0.4rem; position: absolute; left:0.26rem; top: 50%;transform: translate(0, -50%);
 -webkit-transform: translate(0, -50%);}
@@ -305,23 +305,28 @@ color: #56B82B; text-align: center; margin-left: 0.2rem; float: left; cursor: po
 .textPlay.pause{background: url(../images/pause.png); background-size: cover;}
 /* .videoWrap{height: 4.22rem; background:url(../images/videoWrap.png) no-repeat; background-size: cover;
 position: relative;} */
-.videoWrap{height: 4.22rem;}
+.videoWrap{height: 4.22rem; position: relative;}
+.videoTitle{line-height:3.8rem; text-align: center; position: absolute; width: 100%; font-size: 0.18rem;}
 .videoSize{height: 4.22rem; width: 100%; object-fit: fill}
-.audioWrap{height: 4.22rem; background:url(../images/audio_bg.jpg) no-repeat; background-size: cover;
+.audioWrap{height: 4.22rem; /* background:url(../images/audio_bg.jpg) no-repeat; background-size: cover; */
 position: relative;}
 .videoTip{background: #000; opacity: 0.6; position: absolute; top: 50%; left: 50%;transform: translate(-50%, -50%);
 -webkit-transform: translate(-50%, -50%); color: #fff; border-radius: 0.34rem; font-size: 0.24rem;
 width: 4.46rem; height: 0.68rem; line-height: 0.68rem; text-align: center;}
 .videoWrap img{width: 1rem; position: absolute; top: 50%; left: 50%;transform: translate(-50%, -50%);
 -webkit-transform: translate(-50%, -50%);}
-.audioWrap img{width: 1rem; position: absolute; top: 50%; left: 50%;transform: translate(-50%, -50%);
--webkit-transform: translate(-50%, -50%);}
+.audioWrap img{width: 1rem; position: absolute; top: 40%; left: 50%;transform: translate(-50%, -50%);
+ z-index: 100;}
+.audioBg{width: 2.8rem; height: 2.8rem; background: url(../images/audioBg.png) no-repeat; background-size:cover;
+position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%);}
+
 .buyBtn{height: 1rem; position: fixed; left: 0; bottom: 0;z-index: 100; background: #56B82B; color: #fff; font-size: 0.3rem;
 text-align: center; line-height: 1rem; width: 100vw;}
 .txtDetail{}
 .txtDetailHeader{height: 3.2rem; background: #F4F5F5;}
 .txtDetailHeader dl{padding-top: 0.48rem; padding-left: 0.48rem;}
-.txtDetailHeader dt{margin-right: 0.7rem; float: left; width: 1.72rem; height: 2.2rem; border: 1px solid #ccc;}
+.txtDetailHeader dt{margin-right: 0.7rem; float: left; 
+width: 1.72rem; height: 2.2rem; border: 1px solid #ccc;}
 .txtDetailHeader dd{float: left;}
 .txtDetailHeaderDiv{height: 0.58rem;font-size: 0.28rem;}
 .txtDetailHeaderDivL{color: #666;}
@@ -332,6 +337,7 @@ text-align: center; line-height: 1rem; width: 100vw;}
 text-indent:0.26rem;}
 .txtDetailConPartTitleIcon{width: 0.08rem; height: 0.24rem; background: #56B82B; position: absolute;
 top: 50%; left: 0;transform: translate(0, -50%);-webkit-transform: translate(0, -50%);}
+.txtDetailConPartCon2{margin-bottom: 0.1rem;text-align: center; }
 .txtDetailConPartCon{margin-bottom: 0.1rem;}
 .txtDetailConPartCon span{color: #56B82B;}
 .txtDetailConPartConPic{height: 4.16rem;}
@@ -339,13 +345,14 @@ top: 50%; left: 0;transform: translate(0, -50%);-webkit-transform: translate(0, 
 .findP{text-align: right; line-height: 0.8rem; color: #ccc;font-size: 0.24rem;}
 .findP a{color: #ccc;font-size: 0.24rem; font-family: Microsoft YaHei;}
 
-.secondMenu,.thirdMenu,.fourMenu{display: none; margin-left: 0.2rem;}
+.secondMenu,.thirdMenu,.fourMenu,.fifthMenu{display: none; margin-left: 0.2rem;}
 
-.firstMenuTitle,.secondMenuTitle,.thirdMenuTitle,.fourMenuTitle{position: relative;}
+.firstMenuTitle,.secondMenuTitle,.thirdMenuTitle,.fourMenuTitle,.fifthMenuTitle{position: relative;}
 .secondMenuCon{color: #56b82b; line-height: 1rem; border-bottom: 1px solid #e5e5e5;}
 .firstMenu{padding-left: 0.2rem; padding-right: 0.2rem; padding-bottom: 0.3rem;
 line-height: 0.76rem; color: #666; font-size: 0.3rem; }
 .weui-footer_fixed-bottom{bottom:0; background: #fff; padding: 0.2rem 0;}
+.weui-footer_fixed-bottom-fix{bottom: .52em; left: 0; right: 0;position: fixed;}
 
 .EnglishTxt{height: 0.46rem;background: url(../images/EnglishTxt.png); background-size: cover;
  text-align: center; font-size: 0.4rem; line-height: 0.46rem; border-bottom: 1px solid #ccc;}
@@ -362,8 +369,7 @@ background-size: cover;}
 .preClassBtn.disabled{left: 0.3rem; background: url(../images/preClassBtn_off.png); background-size: cover;}
 .nextClassBtn.disabled{right: 0.3rem; background: url(../images/nextClassBtn_off.png); background-size: cover;}
 
-.enjoyShadow{position: fixed; width: 100%; height: 100%; background: #000000; opacity: 0.6;
-top: 0; left: 0;}
+.enjoyShadow{position: fixed; width: 100%; height: 100%; background: #000000; opacity: 0.6;top: 0; left: 0;z-index: 2000;}
 .enjoyarrow{width: 1.69rem; margin-right: 0.6rem; float: right; margin-top: 0.1rem;}
 .enjoyTxt{line-height: 0.54rem; font-size: 0.3rem; color: #fff; width: 3.2rem; margin: 1.7rem auto 0.2rem;}
 .Iknow{width: 1.7rem; margin-left: 2.2rem;}
@@ -395,4 +401,3 @@ text-align: center; line-height: 75vh;}
 
 #page .swiper-slide img.kfformula{height: 0.7rem; width: auto;}
 .firstMenuTitleCon{display: block;width: 90%;}
-
