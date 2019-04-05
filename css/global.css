@@ -401,3 +401,12 @@ text-align: center; line-height: 75vh;}
 
 #page .swiper-slide img.kfformula{height: 0.7rem; width: auto;}
 .firstMenuTitleCon{display: block;width: 90%;}
+/* video样式设置 */
+/* 隐藏全屏按钮 */
+/* video::-webkit-media-controls-fullscreen-button{ display: none; } */
+/* video::-webkit-media-controls-panel{background: #000000; opacity: 0.8;} */
+
+/* .timeprogresschnjcjurxfyi{background:#fff !important;}
+.timeprogressbgchnjcjurxfyi{background:#b2b3ab !important;}
+.controlbgbarchnjcjurxfyi{background: #000 !important; opacity: 0.6;}
+.volumeupchnjcjurxfyi{background-color: #d2d9d9 !important;} */
