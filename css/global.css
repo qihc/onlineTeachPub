@@ -232,8 +232,8 @@ width: 100%; box-sizing: border-box;}
 #nav li a{color: #333; font-size: 0.28rem; padding: 0 0.2rem; height: calc(100% - 0.06rem);}
 #nav li.active-nav a{display: inline-block;border-bottom: 0.06rem solid #56B82B; font-weight: bold;}
 #page{margin: 0.2rem;}
-#page .swiper-slide{height:calc(100vh - 2.3rem);/* overflow-y: auto; */}
-#page .swiper-slide2{height:calc(100vh - 4.86rem);/* overflow-y: auto; */}
+#page .swiper-slide{min-height:calc(100vh - 2.3rem);padding-bottom: 1rem;/* overflow-y: auto; */}
+#page .swiper-slide2{min-height:calc(100vh - 4.86rem);padding-bottom: 0rem;/* overflow-y: auto; */}
 #page .swiper-slide img{/* height:100%; */ width: 100%;}
 .buyBottom{height: 1rem; line-height: 1rem; background: #F4F5F5; position: relative;}
 .buyBottom .money{color:#FF6600; font-size: 0.3rem; margin-left: 0.2rem; font-weight: bold;}
