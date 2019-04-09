@@ -6,21 +6,24 @@
 	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
     <title>北教辅学网</title>
     <script src="../js/aotoRem.js"></script>
-	<style>
-		body{background: #fff;}
-	</style>
+	
 	<link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../style/weui.css">
 	<link rel="stylesheet" type="text/css" href="../css/global.css"/>
 	<link rel="stylesheet" href="../css/swiper.min.css">
 	<script src="../js/jquery-3.3.1.min.js"></script>
 	<script src="../js/swiper.min.js"></script>
+	
+	<style>
+		body{background: #fff;}
+		
+	</style>
 </head>
 <body ontouchstart>
     <div class="mainHeader">第一节 我爱阅读 <span class="leftArrow"></span>
 		<span class="avatarModel"><img src="../images/avatarModel.png" alt=""></span>
 	</div>
-	<div class="mainCon">
+	<div class="mainCon mainConFirst">
 		<div class="readingHeader">
 			<div class="readingTop">
 				<!-- <span class="preClass">上一课</span> -->
@@ -64,7 +67,7 @@
 			  
 			    </ul>
 			</div>
-			<div id="page" class="swiper-container" id="page">
+			<div id="page" class="swiper-container">
 			    <div class="swiper-wrapper">
 			        <div class="swiper-slide slidepage swiper-slide2">
 						<div class="ChineseTxtBig"><img src="../images/font.gif" alt=""></div>
@@ -156,17 +159,28 @@
 			tap: function(){
 				myPage.slideTo( myNav.clickedIndex)
 			}
-		}
-	})
+		},
+		
+	});
 	var myPage = new Swiper('#page',{
 		on:{
-		slideChangeTransitionStart: function(){
-			updateNavPosition()
-		}}
-	})
+			slideChangeTransitionStart: function(){
+				updateNavPosition()
+			}
+		}
+		
+	});
+	
 	function updateNavPosition(){
 		$('#nav .active-nav').removeClass('active-nav');
 		var activeNav = $('#nav .swiper-slide').eq(myPage.activeIndex).addClass('active-nav');
+		console.log(activeNav.index())
+		if(activeNav.index()==0){
+			$('.mainCon').addClass('mainConFirst')
+		}else{
+			$('.mainCon').removeClass('mainConFirst')
+		}
+
 	}
 	$('.textPlay').click(function(){
 		$(this).toggleClass('pause')
@@ -218,6 +232,16 @@ $(function(){
 		}
 		
 	})
+	
+	//点击#nav的第一个swiper-slide时给.mainCon添加.mainConFirst,否则移除这个mainConFirst
+	$('#nav').find('.swiper-slide').eq(0).click(function(){
+		$('.mainCon').addClass('mainConFirst')
+	})
+	$('#nav .swiper-slide:gt(0)').click(function(){
+		$('.mainCon').removeClass('mainConFirst')
+	})
+	
+	
 })
 	
 </script>
